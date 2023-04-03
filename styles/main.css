@@ -52,3 +52,37 @@
   line-height: 2rem;
   margin-top: 20px;
 }
+
+/* My Skills */
+.Main-mySkills{
+  width: 100%;
+  background-color: var(--backgroundSections);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.Main-mySkills__title{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.Main-mySkills__skills{
+  max-width: 350px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.Main-mySkills__skills-title{
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.Main-mySkills__skills-list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 2rem;
+  padding: 3px;
+}
+.Main-mySkills__skills-list li span{
+  width: 30px;
+  height: 30px;
+  background-color: var(--title-color);
+}
