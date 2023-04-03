@@ -1,8 +1,11 @@
 .Main{
   margin-top: 60px;
 }
+
+/* Home */
 .Main-home{
   width: 100%;
+  margin-bottom: 20px;
 }
 .Main-home__backgroundImage{
   position: relative;
@@ -12,7 +15,7 @@
 }
 .Main-home__backgroundImage-profile{
   position: absolute;
-  top: calc(30%);
+  top: calc(35%);
   left: 15px;
   width: 140px;
   height: 140px;
@@ -26,9 +29,26 @@
   padding: 60px 20px 20px 20px;
 }
 .Main-home__description h1{
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .Main-home__description p{
   font-size: 1.7rem;
+  line-height: 2rem;
   margin-top: 12px;
+}
+
+/* About me */
+.Main-aboutMe{
+  width: 100%;
+  background-color: var(--backgroundSections);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.Main-aboutMe__info h2{
+  font-size: 3rem;
+}
+.Main-aboutMe__info p{
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-top: 20px;
 }
