@@ -1,6 +1,6 @@
 :root{
   --background: black;
-  --backgorundSections: #0A0A0B,
+  --backgorundSections: #0A0A0B;
   --title-color: #C7CDE4;
   --text-color: #959595;
 
@@ -17,6 +17,7 @@
 html {
   font-size: 62.5%;
   font-family: var(--font-text);
+  color: var(--text-color);
   background-color: var(--background);
 }
 
