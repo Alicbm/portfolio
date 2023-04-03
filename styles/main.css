@@ -138,6 +138,7 @@
   width: 120px;
   height: 35px;
   font-size: 1.7rem;
+  font-family: var(--font-title);
   border: 1px solid var(--title-color);
   border-radius: 30px;
 }
@@ -145,7 +146,60 @@
   background-color: var(--title-color);
 }
 .Main-projects__container-buttons__github{
+  color: var(--title-color);
+  background-color: var(--backgroundSections);
+}
+
+/* Other Projects */
+.Main-otherProjects{
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.Main-otherProjects__title{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.Main-otherProjects__carousel{
+  display: flex;
+  overflow-x: scroll;
+}
+.Main-otherProjects__project{
+  min-width: 270px;
+  background-color: var(--backgroundSections);
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.Main-otherProjects__project-image{
+  width: 100%;
+  height: 130px;
+  background-color: var(--background);
+  margin-bottom: 15px;
+}
+.Main-otherProjects__project-phrase p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Main-otherProjects__project-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px auto;
+}
+.Main-otherProjects__project-buttons button{
+  width: 80px;
+  height: 25px;
+  font-size: 1.5rem;
   font-family: var(--font-title);
+  border: 1px solid var(--title-color);
+  border-radius: 30px;
+}
+.Main-otherProjects__project-buttons__site{
+  background-color: var(--title-color);
+}
+.Main-otherProjects__project-buttons__github{
   color: var(--title-color);
   background-color: var(--backgroundSections);
 }
