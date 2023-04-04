@@ -1,7 +1,9 @@
 :root{
   --background: black;
   --backgroundSections: #0A0A0B;
-  --title-color: #C7CDE4;
+  /* --title-color: #1a5e51; */
+  /* --title-color: #C7CDE4; */
+  --title-color: #97a3d4;
   --text-color: #959595;
 
   --font-title: "Fredoka", sans-serif;
@@ -20,7 +22,16 @@ html {
   color: var(--text-color);
   background-color: var(--background);
 }
-
+body::-webkit-scrollbar{
+  width: 5px;
+  background: var(--backgroundSections);
+}
+body::-webkit-scrollbar-thumb{
+  width: 5px;
+  border-radius: 5px;
+  background-color: var(--title-color);
+}
 h1, h2, h3 {
   font-family: var(--font-title);
+  color: var(--title-color);
 }

@@ -15,7 +15,9 @@
   position: relative;
   width: 100%;
   height: 130px;
-  background-color: #959595;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('../images/profile_back.jpeg');
+  background-position: center;
+  background-size: cover;
 }
 .Main-home__backgroundImage-profile{
   position: absolute;
@@ -24,6 +26,9 @@
   width: 140px;
   height: 140px;
   background-color: var(--background);
+  background-image: url('../images/profile.jpeg');
+  background-size: cover;
+  filter: grayscale(20%);
   border-radius: 50%;
   border: 5px solid var(--font-title);
 }
@@ -110,16 +115,26 @@
   font-size: 3rem;
   margin-bottom: 20px;
 }
+.Main-projects__container{
+  padding: 20px 0;
+  border-bottom: 1px solid var(--background);
+}
 .Main-projects__container h3{
   font-size: 2rem;
   padding-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .Main-projects__container-image{
   width: 100%;
   height: 170px;
   background-color: var(--background);
   margin-bottom: 20px;
+}
+.Main-projects__container-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
 }
 .Main-projects__container-tools{
   display: flex;
@@ -200,7 +215,17 @@
   background-color: var(--background);
   margin-bottom: 15px;
 }
+.Main-otherProjects__project-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
 .Main-otherProjects__project-phrase p{
+  width: 100%;
+  height: 55px;
+  display: grid;
+  place-content: center;
   font-size: 1.5rem;
   text-align: center;
 }
