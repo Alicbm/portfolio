@@ -1,11 +1,15 @@
 .Main{
   margin-top: 60px;
 }
+.Main button{
+  cursor: pointer;
+}
 
 /* Home */
 .Main-home{
   width: 100%;
-  margin-bottom: 20px;
+  max-width: 650px;
+  margin: 0 auto 20px auto;
 }
 .Main-home__backgroundImage{
   position: relative;
@@ -40,9 +44,10 @@
 /* About me */
 .Main-aboutMe{
   width: 100%;
+  max-width: 650px;
   background-color: var(--backgroundSections);
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 .Main-aboutMe__info h2{
   font-size: 3rem;
@@ -56,15 +61,21 @@
 /* My Skills */
 .Main-mySkills{
   width: 100%;
+  max-width: 650px;
   background-color: var(--backgroundSections);
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 .Main-mySkills__title{
   font-size: 3rem;
   margin-bottom: 10px;
 }
+.Main-mySkills__container{
+  display: flex;
+  flex-wrap: wrap;
+}
 .Main-mySkills__skills{
+  width: 220px;
   padding: 15px;
   margin-bottom: 10px;
 }
@@ -90,9 +101,10 @@
 /* Projects */
 .Main-projects{
   width: 100%;
+  max-width: 650px;
   background-color: var(--backgroundSections);
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 .Main-projects__title{
   font-size: 3rem;
@@ -153,16 +165,27 @@
 /* Other Projects */
 .Main-otherProjects{
   width: 100%;
+  max-width: 650px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 .Main-otherProjects__title{
   font-size: 3rem;
+  padding-left: 20px;
   margin-bottom: 10px;
 }
 .Main-otherProjects__carousel{
   display: flex;
   overflow-x: scroll;
+}
+.Main-otherProjects__carousel::-webkit-scrollbar{
+  height: 5px;
+  background: var(--backgroundSections);
+}
+.Main-otherProjects__carousel::-webkit-scrollbar-thumb{
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--title-color);
 }
 .Main-otherProjects__project{
   min-width: 270px;
@@ -202,4 +225,34 @@
 .Main-otherProjects__project-buttons__github{
   color: var(--title-color);
   background-color: var(--backgroundSections);
+}
+.Main-projects__container-buttons__github:hover, .Main-otherProjects__project-buttons__github:hover{
+  color: var(--backgroundSections);   
+  background-color: var(--title-color);
+}
+@media(min-width: 600px){
+  .Main-mySkills__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .Main-mySkills__skills{
+    width: 40%;
+  }
+}
+@media(min-width: 700px){
+  .Main p{
+    font-size: 1.8rem;
+  }
+  .Main-home, .Main-aboutMe, .Main-mySkills, .Main-projects{
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .Main-otherProjects{
+    padding: 0;
+  }  
+  .Main-projects__container-image{
+    height: 250px;
+  }
 }
