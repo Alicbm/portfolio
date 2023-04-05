@@ -1,8 +1,6 @@
 :root{
   --background: black;
   --backgroundSections: #0A0A0B;
-  /* --title-color: #1a5e51; */
-  /* --title-color: #C7CDE4; */
   --title-color: #97a3d4;
   --text-color: #959595;
 
@@ -41,4 +39,11 @@ body::-webkit-scrollbar-thumb{
 h1, h2, h3 {
   font-family: var(--font-title);
   color: var(--title-color);
+}
+.hidden{
+  opacity: 0;
+  transition: all 3s;
+}
+.show{
+  opacity: 1;
 }

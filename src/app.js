@@ -21,6 +21,7 @@ const handleSectionSelectd = (section) => {
   let sectionSelected = document.querySelector('.selected');
   sectionSelected.classList.remove('selected')
   section.classList.add('selected')
+  modal.classList.remove('modal-active')
 }
 
 home.addEventListener('click', () => handleSectionSelectd(home))

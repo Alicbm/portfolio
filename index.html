@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./favicon.png" />
   <title>Alic Barandica | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
     <div class="Header-logo">
       <img 
         class="Header-logo__logo"
-        src="./images/white.png" 
+        src="./images/logo.png" 
         alt="Alic Barandica"
       >
       <img 
@@ -66,7 +67,7 @@
   <main class="Main"> 
 
     <!-- Home -->
-    <section class="Main-home" id="home-route">
+    <section class="Main-home hidden" id="home-route">
       <article class="Main-home__backgroundImage">
         <div class="Main-home__backgroundImage-back"></div>
         <div class="Main-home__backgroundImage-profile"></div>
@@ -79,17 +80,18 @@
     </section>
 
     <!-- About Me -->
-    <section class="Main-aboutMe" id="aboutme-route">
+    <section class="Main-aboutMe hidden" id="aboutme-route">
       <article class="Main-aboutMe__info">
         <h2>About me</h2>  
-        <p>💻 En una época donde la tecnología es fundamental y la información disponible es inmensa, tomé la decisión de convertirme en programador autodidacta. Considero que es la mejor manera de aprender, elijo los software más demandados, para la construcción de páginas web y apps.</p>
-        <p>📈  Disfruto más mi vida desde que descubrí mi pasión, el desarrollo web, me encanta aprender nuevas herramientas, nuevas formas de resolver problemas, tengo una gran capacidad de adaptación a los cambios, y en esta época donde el mundo se mueve tan rápido, esto es importante.</p>
-        <p>📝 Mi principal objetivo es desarrollar mi carrera profesional en una empresa donde se valoren mis habilidades blandas y mis habilidades técnicas. Quiero trabajar en un ambiente sano donde pueda crecer como profesional y como persona, agregando valor a mi equipo de trabajo.</p>
+        <p>Hello! 👋🏾 I'm Alic Barandica, a full-stack developer.</p>
+        <p>💻 In an era where technology is fundamental and information is vast, I made the decision to become a self-taught programmer. I believe it's the best way to learn, selecting the most in-demand software such as JavaScript, Typescript, React Js, Node Js, Express Js, Sequelize, MySQL, PostgreSQL, Bootstrap, Git, CSS, HTML for building web pages and apps.</p>
+        <p>📈 Since discovering my passion for web development, I enjoy my life even more. I love learning new tools and ways to solve problems, and I have a great ability to adapt to changes, which is important in a world that moves so fast.</p>
+        <p>My main objective is to develop my professional career in a company that values both my soft skills and technical abilities. I want to work in a healthy environment where I can grow as a professional and as a person, while adding value to my team.</p>
       </article>
     </section>
 
     <!-- My Skills -->
-    <section class="Main-mySkills" id="myskills-route">
+    <section class="Main-mySkills hidden" id="myskills-route">
       <h2 class="Main-mySkills__title">My Skills</h2>
 
       <div class="Main-mySkills__container">
@@ -163,7 +165,7 @@
       <h2 class="Main-projects__title">Projects</h2>
 
       <!-- BARGAILIX -->
-      <article class="Main-projects__container">
+      <article class="Main-projects__container hidden">
         <h3>BARGAILIX</h3>
         <div class="Main-projects__container-image">
           <img src="./images/bargailix.png" alt="Bargailix">
@@ -179,8 +181,10 @@
           <img src="./tools/redux.png" alt="Redux Toolkit">
         </div>
         <div class="Main-projects__container-description">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt blanditiis, saepe magnam, ducimus architecto hic non corporis adipisci velit fuga sequi iusto est porro quia culpa esse nostrum, cum qui.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt blanditiis, saepe magnam, ducimus architecto hic non corporis adipisci velit fuga sequi iusto est porro quia culpa esse nostrum, cum qui.</p>
+          <p>I present to you Bargailix, it is an online store that consumes the information through a <a href="https://github.com/Alicbm/online-store" target="_blank">REST API</a> created just for this application, the <a href="https://github.com/Alicbm/online-store" target="_blank">REST API</a> connects to a MySQL database with more than 200 products.</p>
+          <p>Among the features of this app is the option to search for products, filter products by brands, by price ranges, by types of products. You can sort the products by prices, in descending and ascending order.</p>
+          <p>However, that's not all, you have the option to send products to the shopping cart, discard, add more products or subtract more products from the shopping cart. On the same route you will have access to recommended products for you and more options.</p>
+          <p>Among the programming languages used to create this app we have Typescript, Node Js, Express Js and React Js.</p>
         </div>
         <div class="Main-projects__container-buttons">
           <a href="https://bargailix.vercel.app/" target="_blank">
@@ -193,7 +197,7 @@
       </article>
 
       <!-- PELISFLIX -->
-      <article class="Main-projects__container">
+      <article class="Main-projects__container hidden">
         <h3>PELISFLIX</h3>
         <div class="Main-projects__container-image">
           <img src="./images/pelisflix2.png" alt="Pelisflix2">
@@ -206,8 +210,8 @@
           <img src="./tools/redux.png" alt="Redux Toolkit">
         </div>
         <div class="Main-projects__container-description">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt blanditiis, saepe magnam, ducimus architecto hic non corporis adipisci velit fuga sequi iusto est porro quia culpa esse nostrum, cum qui.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt blanditiis, saepe magnam, ducimus architecto hic non corporis adipisci velit fuga sequi iusto est porro quia culpa esse nostrum, cum qui.</p>
+          <p>Pelisflix is an application with information of more than 800,000 movies, here you can search for a specific movie, you can filter movies for different categories, you can see the description of each movie, and in the description path you have different options like "The Top Billed Cast ", the related films, a trailer of the film, comments about the film and general information about the film.</p>
+          <p>This application was built using the REST API, "TheMovieDB". Among the programming languages used to create this application we have Typescript and React Js.</p>
         </div>
         <div class="Main-projects__container-buttons">
           <a href="https://bargailix.vercel.app/" target="_blank">
@@ -221,7 +225,7 @@
     </section>
 
     <!-- Other Projects -->
-    <section class="Main-otherProjects">
+    <section class="Main-otherProjects hidden">
       <h2 class="Main-otherProjects__title">Other Projects</h2>
     
       <div class="Main-otherProjects__carousel">
@@ -317,7 +321,7 @@
     </section>
   </main>
   
-  <footer class="Footer" id="contactme-route">
+  <footer class="Footer hidden" id="contactme-route">
     <section class="Footer-main">
       <article class="Footer-main__networks">
         <a href="https://github.com/Alicbm/" target="_blank">
@@ -336,5 +340,6 @@
     </section>
   </footer>
   <script src="./src/app.js"></script>
+  <script src="./src/observer.js"></script>
 </body>
 </html>
