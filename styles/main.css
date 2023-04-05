@@ -9,7 +9,8 @@
 .Main-home{
   width: 100%;
   max-width: 650px;
-  margin: 0 auto 20px auto;
+  padding-top: 10px;
+  margin: 0px auto 20px auto;
 }
 .Main-home__backgroundImage{
   position: relative;
@@ -18,6 +19,8 @@
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('../images/profile_back.jpeg');
   background-position: center;
   background-size: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 .Main-home__backgroundImage-profile{
   position: absolute;
@@ -36,6 +39,9 @@
   width: 100%;
   background-color: var(--backgroundSections);
   padding: 60px 20px 20px 20px;
+}
+.Main-home__description:hover{
+  background: rgba(0,0,0,0.1);
 }
 .Main-home__description h1{
   font-size: 3.5rem;
@@ -95,12 +101,11 @@
   align-items: center;
   list-style: none;
   font-size: 2rem;
-  padding: 3px;
+  padding: 5px;
 }
-.Main-mySkills__skills-list li span{
-  width: 30px;
-  height: 30px;
-  background-color: var(--title-color);
+.Main-mySkills__skills-list li img{
+  width: 35px;
+  height: 35px;
 }
 
 /* Projects */
@@ -144,10 +149,9 @@
   gap: 5px;
   margin-bottom: 20px;
 }
-.Main-projects__container-tools span{
+.Main-projects__container-tools img{
   width: 25px;
   height: 25px;
-  background-color: #959595
 }
 .Main-projects__container-description p{
   font-size: 1.7rem;
@@ -273,7 +277,9 @@
     border-radius: 5px;
     overflow: hidden;
   }
-  
+  .Main-aboutMe:hover, .Main-mySkills:hover, .Main-projects:hover{
+    background: rgba(0,0,0,0.1);
+  }
   .Main-otherProjects{
     padding: 0;
   }  
