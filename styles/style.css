@@ -21,6 +21,7 @@ html {
   font-family: var(--font-text);
   color: var(--text-color);
   background-color: var(--background);
+  scroll-behavior: smooth;
 }
 body{
   width: 100%;

@@ -33,11 +33,31 @@
     </div>
     <div class="Header-list">
       <ul class="Header-list__list">
-        <li id="home" class="selected">01. Home</li>
-        <li id="aboutMe">02. About me</li>
-        <li id="mySkills">03. My Skills</li>
-        <li id="projects">04. Projects</li>
-        <li id="contactMe">05. Contact me</li>
+        <li id="home" class="selected">
+          <a href="#home-route">
+            01. Home
+          </a>
+        </li>
+        <li id="aboutMe">
+          <a href="#aboutme-route">
+            02. About me
+          </a>
+        </li>
+        <li id="mySkills">
+          <a href="#myskills-route">
+            03. My Skills
+          </a>
+        </li>
+        <li id="projects">
+          <a href="#projects-route">
+            04. Projects
+          </a>
+        </li>
+        <li id="contactMe">
+          <a href="#contactme-route">
+            05. Contact me
+          </a>
+        </li>
       </ul>
     </div>
   </header>
@@ -46,7 +66,7 @@
   <main class="Main"> 
 
     <!-- Home -->
-    <section class="Main-home">
+    <section class="Main-home" id="home-route">
       <article class="Main-home__backgroundImage">
         <div class="Main-home__backgroundImage-back"></div>
         <div class="Main-home__backgroundImage-profile"></div>
@@ -59,7 +79,7 @@
     </section>
 
     <!-- About Me -->
-    <section class="Main-aboutMe">
+    <section class="Main-aboutMe" id="aboutme-route">
       <article class="Main-aboutMe__info">
         <h2>About me</h2>  
         <p>💻 En una época donde la tecnología es fundamental y la información disponible es inmensa, tomé la decisión de convertirme en programador autodidacta. Considero que es la mejor manera de aprender, elijo los software más demandados, para la construcción de páginas web y apps.</p>
@@ -69,7 +89,7 @@
     </section>
 
     <!-- My Skills -->
-    <section class="Main-mySkills">
+    <section class="Main-mySkills" id="myskills-route">
       <h2 class="Main-mySkills__title">My Skills</h2>
 
       <div class="Main-mySkills__container">
@@ -139,7 +159,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="Main-projects">
+    <section class="Main-projects" id="projects-route">
       <h2 class="Main-projects__title">Projects</h2>
 
       <!-- BARGAILIX -->
@@ -163,8 +183,12 @@
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt blanditiis, saepe magnam, ducimus architecto hic non corporis adipisci velit fuga sequi iusto est porro quia culpa esse nostrum, cum qui.</p>
         </div>
         <div class="Main-projects__container-buttons">
-          <button class="Main-projects__container-buttons__site">Visit site</button>  
-          <button class="Main-projects__container-buttons__github">GitHub</button>  
+          <a href="https://bargailix.vercel.app/" target="_blank">
+            <button class="Main-projects__container-buttons__site">Visit site</button>  
+          </a>
+          <a href="https://github.com/Alicbm/e-commerce" target="_blank">
+            <button class="Main-projects__container-buttons__github">GitHub</button>  
+          </a>
         </div>
       </article>
 
@@ -186,8 +210,12 @@
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt blanditiis, saepe magnam, ducimus architecto hic non corporis adipisci velit fuga sequi iusto est porro quia culpa esse nostrum, cum qui.</p>
         </div>
         <div class="Main-projects__container-buttons">
-          <button class="Main-projects__container-buttons__site">Visit site</button>  
-          <button class="Main-projects__container-buttons__github">GitHub</button>  
+          <a href="https://bargailix.vercel.app/" target="_blank">
+            <button class="Main-projects__container-buttons__site">Visit site</button>  
+          </a>
+          <a href="https://github.com/Alicbm/e-commerce" target="_blank">
+            <button class="Main-projects__container-buttons__github">GitHub</button>  
+          </a>
         </div>
       </article>
     </section>
@@ -204,7 +232,7 @@
             <img src="./images/weather.png" alt="Weather App">
           </div>
           <div class="Main-otherProjects__project-phrase">
-            <p>"Here you have the opportunity to search for the weather of many cities around the world."</p>
+            <p>"Look up the weather for many cities around the world."</p>
           </div>
           <div class="Main-otherProjects__project-buttons">
             <a href="https://alicbm.github.io/weather-app/" target="_blank">
@@ -289,12 +317,18 @@
     </section>
   </main>
   
-  <footer class="Footer">
+  <footer class="Footer" id="contactme-route">
     <section class="Footer-main">
       <article class="Footer-main__networks">
-        <span></span>
-        <span></span>
-        <span></span>
+        <a href="https://github.com/Alicbm/" target="_blank">
+          <img src="./tools/github.png" alt="Github" />
+        </a>
+        <a href="https://www.linkedin.com/in/alic-barandica/" target="_blank">
+          <img src="./tools/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="mailto:alicmejia175@gmail.com" target="_blank">
+          <img src="./tools/email.png" alt="E-mail" />
+        </a>
       </article>
       <article class="Footer-main__phrase">
         <p>Dont' forget, you're amazing</p>
