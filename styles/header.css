@@ -4,8 +4,10 @@
   right: 0;
   left: 0;
   width: 100%;
+  max-width: 1400px;
   height: 60px;
   z-index: 1;
+  margin: 0 auto;
 
   animation: header ease-in-out forwards .5s;
 }

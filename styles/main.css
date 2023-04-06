@@ -1,5 +1,7 @@
 .Main{
-  margin-top: 60px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 60px auto 0 auto;
 }
 .Main button{
   cursor: pointer;
@@ -95,7 +97,7 @@
   width: 100%;
   max-width: 650px;
   background-color: var(--backgroundSections);
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/portfolio-large.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/portfolio-small.jpg');
   background-size: cover;
   padding: 20px;
   margin: 0 auto 20px auto;
@@ -257,7 +259,7 @@
 }
 .Main-otherProjects__project-image img{
   width: 100%;
-  height: 100%;
+  height: 130px;
   object-fit: cover;
   opacity: 0.7;
 }
@@ -314,7 +316,7 @@
     overflow: hidden;
   }
   .Main-mySkills:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url('../images/portfolio-large.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url('../images/portfolio-small.jpg');
   background-size: cover;
   }
   .Main-otherProjects{
