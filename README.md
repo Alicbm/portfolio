@@ -1,4 +1,4 @@
-#Alic Barandica
+# Alic Barandica
 > "We are what repeatedly do. Excellence, therefore, is not an act but a habit"
 
 Hello! Welcome to this repository.
